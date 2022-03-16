@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+/* @font-face {
+  font-family: "PlaylistScript";
+  src: local("PlaylistScript"),
+    url("../assets/fonts/PlaylistScript.ttf") format("truetype");
+  font-weight: bold;
+} */
+
+.font-face-gm {
+  font-family: "GoldmanBold";
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +25,21 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background: #83a4d4;
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+  background: linear-gradient(to right, #b6fbff, #83a4d4); */
+
+  /* background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+  background: linear-gradient(to right, #ffa751, #ffe259); */
+
+  /* background: #ffafbd;
+  background: -webkit-linear-gradient(to right, #ffc3a0, #ffafbd);
+  background: linear-gradient(to right, #ffc3a0, #ffafbd); */
+
+  /* background: #fff;
+  background: -webkit-linear-gradient(to right, #8e2de2, #fff);
+  background: linear-gradient(to right, #8e2de2, #fff); */
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
