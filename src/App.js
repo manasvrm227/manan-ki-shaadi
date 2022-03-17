@@ -1,16 +1,15 @@
-import "./App.css";
-import Jumbotron from "./components/Jumbotron";
-import "./assets/fonts/PlaylistScript.ttf";
-import OurStory from "./components/our-story";
+import Layout from "./layouts";
+import GlobalFonts from "./common/styles";
+import Home from "./components/home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Jumbotron />
-        <OurStory />
-      </header>
-    </div>
+    <>
+      <GlobalFonts />
+      <Layout>
+        <Home />
+      </Layout>
+    </>
   );
 }
 
