@@ -3,12 +3,10 @@ import { Grid } from "@mui/material";
 
 export const Wrapper = styled(Grid)`
   .carousel-wrapper {
-    height: 60vh;
+    height: 95vh;
   }
   .carousel-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     @media (max-width: 425px) {
       flex-direction: column;
     }

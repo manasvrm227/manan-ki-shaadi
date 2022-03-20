@@ -1,6 +1,7 @@
 import Layout from "./layouts";
 import GlobalFonts from "./common/styles";
 import Home from "./components/home";
+import OurStory from "./components/our-story";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <GlobalFonts />
       <Layout>
         <Home />
+        <OurStory />
       </Layout>
     </>
   );

@@ -21,11 +21,17 @@ const Home = () => {
           {CarouselDisplay.map((item) => {
             return (
               <SwiperSlide>
-                <Grid className="carousel-container">
-                  <Grid item xs={12} lg={6}>
+                <Grid container className="carousel-container">
+                  <Grid item xs={12} md={6} lg={6}>
                     <img src={item.image} alt={item.quote1} />
                   </Grid>
-                  <Grid item xs={12} lg={6} className="carousel-text-wrapper">
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    lg={6}
+                    className="carousel-text-wrapper"
+                  >
                     <div className="carousel-text-container">
                       <p>{item.quote}</p>
                       <p>{item.description}</p>
