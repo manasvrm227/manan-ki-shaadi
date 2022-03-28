@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper";
 import { Wrapper } from "./styles";
 import { Grid } from "@mui/material";
@@ -14,8 +15,9 @@ const Home = () => {
     <Wrapper conatiner>
       <Grid item xs={12} lg={12} className="carousel-wrapper">
         <Swiper
-          pagination={true}
           modules={[Pagination, Autoplay]}
+          pagination={true}
+          autoplay={{ delay: 5000 }}
           className="mySwiper"
         >
           {CarouselDisplay.map((item) => {
@@ -33,8 +35,8 @@ const Home = () => {
                     className="carousel-text-wrapper"
                   >
                     <div className="carousel-text-container">
-                      <p>{item.quote}</p>
-                      <p>{item.description}</p>
+                      <p className="quote-title">{item.quote}</p>
+                      <p className="quote-description">{item.description}</p>
                     </div>
                   </Grid>
                 </Grid>
@@ -51,8 +53,8 @@ export default Home;
 
 const CarouselDisplay = [
   {
-    quote: "Quote 1",
-    image: Eng4,
+    quote: `"Sorry, I can’t hear you over the volume of my hair."`,
+    image: Eng3,
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
   },
@@ -64,7 +66,7 @@ const CarouselDisplay = [
   },
   {
     quote: "Quote 3",
-    image: Eng3,
+    image: Eng4,
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
   },

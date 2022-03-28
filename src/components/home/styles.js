@@ -2,9 +2,11 @@ import styled from "styled-components";
 import { Grid } from "@mui/material";
 
 export const Wrapper = styled(Grid)`
-  .carousel-wrapper {
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+  /* .carousel-wrapper {
     height: 95vh;
-  }
+  } */
   .carousel-container {
     display: flex;
     @media (max-width: 425px) {
@@ -22,9 +24,21 @@ export const Wrapper = styled(Grid)`
       width: 100%;
     }
   }
+  .quote-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ac3b61;
+  }
+  .quote-description {
+    color: #123c69;
+  }
+
   .swiper {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+  }
+  .swiper-wrapper {
+    height: auto;
   }
   .swiper-slide {
     text-align: center;
