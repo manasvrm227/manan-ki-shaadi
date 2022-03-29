@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { SectionHeader } from "../../commonStyles";
 
 export const Wrapper = styled.div`
   .header-container {
