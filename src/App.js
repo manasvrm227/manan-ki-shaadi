@@ -24,6 +24,7 @@ const Wrapper = styled.div`
     text-align: center;
   }
   .heading {
+    margin-top: 5%;
     ${SectionHeader}
   }
 `;
@@ -37,7 +38,6 @@ function App() {
         <Grid item xs={12} className="header-container">
           <p className="heading">Our Story</p>
         </Grid>
-        <Grid item xs={12}></Grid>
       </Grid>
       <div className="deck-container">
         <Deck />

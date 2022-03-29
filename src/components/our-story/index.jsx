@@ -1,14 +1,38 @@
 import React, { useState } from "react";
 import { useSprings, animated, interpolate } from "react-spring";
 import { useGesture } from "react-use-gesture";
+import One from "../../assets/images/1.jpg";
+import Two from "../../assets/images/2.jpg";
+import Three from "../../assets/images/3.jpg";
+import Four from "../../assets/images/4.jpg";
+import Five from "../../assets/images/5.jpg";
+import Six from "../../assets/images/6.jpg";
+import Seven from "../../assets/images/7.jpg";
+import Eight from "../../assets/images/8.jpg";
+import Nine from "../../assets/images/9.jpg";
+import Ten from "../../assets/images/10.jpg";
+import Eleven from "../../assets/images/11.jpg";
+import Twelve from "../../assets/images/12.jpg";
+import Thirteen from "../../assets/images/13.jpg";
+import Fourteen from "../../assets/images/14.jpg";
+import Fifteen from "../../assets/images/15.jpg";
 
 const cards = [
-  "https://upload.wikimedia.org/wikipedia/en/f/f5/RWS_Tarot_08_Strength.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/5/53/RWS_Tarot_16_Tower.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/9/9b/RWS_Tarot_07_Chariot.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/d/db/RWS_Tarot_06_Lovers.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg",
-  "https://upload.wikimedia.org/wikipedia/en/d/de/RWS_Tarot_01_Magician.jpg",
+  Fifteen,
+  Fourteen,
+  Thirteen,
+  Twelve,
+  Eleven,
+  Ten,
+  Nine,
+  Eight,
+  Seven,
+  Six,
+  Five,
+  Four,
+  Three,
+  Two,
+  One,
 ];
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
@@ -76,7 +100,7 @@ const Deck = () => {
           ),
           position: "absolute",
           width: "100vw",
-          height: "100vh",
+          height: "90vh",
           willChange: "transform",
           display: "flex",
           alignItems: "center",
@@ -90,12 +114,12 @@ const Deck = () => {
             transform: interpolate([rot, scale], trans),
             backgroundImage: `url(${cards[i]})`,
             backgroundColor: "white",
-            backgroundSize: "auto 85%",
+            backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
-            backgroundRosition: "center center",
+            // backgroundRosition: "center center",
             width: "45vh",
             maxWidth: "300px",
-            height: "85vh",
+            height: "70vh",
             maxHeight: "570px",
             willChange: "transform",
             borderRadius: "10px",
