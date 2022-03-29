@@ -5,10 +5,10 @@ import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper";
 import { Wrapper } from "./styles";
 import { Grid } from "@mui/material";
-import Eng1 from "../../assets/images/eng-1.jpg";
-import Eng2 from "../../assets/images/eng-2.jpg";
-import Eng3 from "../../assets/images/eng-3.jpg";
-import Eng4 from "../../assets/images/eng-4.jpg";
+import Eng1 from "../../assets/images/eng-1-min.jpg";
+import Eng2 from "../../assets/images/eng-2-min.jpg";
+import Eng3 from "../../assets/images/eng-3-min.jpg";
+import Eng4 from "../../assets/images/eng-4-min.jpg";
 
 const Home = () => {
   return (
@@ -71,7 +71,7 @@ const CarouselDisplay = [
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
   },
   {
-    quote: "Quote 4",
+    quote: `"Even on bad days, I’ll still be happy with you."`,
     image: Eng2,
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",

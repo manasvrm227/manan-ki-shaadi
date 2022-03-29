@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
-import FlowersCornerLeft from "../../assets/images/flower-left.png";
-import FlowersCornerRight from "../../assets/images/flower.png";
+import FlowersCornerLeft from "../../assets/images/flower-left-min.png";
+import FlowersCornerRight from "../../assets/images/flower-min.png";
 import { Wrapper } from "./styles";
 
 const Header = () => {
