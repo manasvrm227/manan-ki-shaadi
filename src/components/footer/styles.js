@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { SectionHeader } from "../../commonStyles";
 
 export const Wrapper = styled.div`
+  margin-top: 8%;
   .header-container {
-    height: 15vh;
+    height: 20vh;
   }
   .img-container {
     width: 100%;
@@ -13,11 +13,10 @@ export const Wrapper = styled.div`
     justify-content: space-between;
   }
   .heading-text {
-    font-family: "Kalam", cursive;
     display: flex;
     align-items: center;
     height: 100%;
-    font-size: 2.5rem;
+    font-size: 1rem;
     color: #ac3b61;
   }
   .flower-img {

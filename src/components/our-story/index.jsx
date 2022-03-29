@@ -46,7 +46,7 @@ const to = (i) => ({
 const from = (i) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
 const trans = (r, s) =>
-  `perspective(1500px) rotateX(30deg) rotateY(${
+  `perspective(3000px) rotateX(10deg) rotateY(${
     r / 10
   }deg) rotateZ(${r}deg) scale(${s})`;
 

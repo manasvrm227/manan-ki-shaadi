@@ -1,9 +1,9 @@
 import { Grid } from "@mui/material";
-import FlowersCornerLeft from "../../assets/images/flower-left-min.png";
-import FlowersCornerRight from "../../assets/images/flower-min.png";
+import FlowersCornerLeft from "../../assets/images/flower-left-down.png";
+import FlowersCornerRight from "../../assets/images/flower-right-down.png";
 import { Wrapper } from "./styles";
 
-const Header = () => {
+const Footer = () => {
   return (
     <Wrapper>
       <Grid container>
@@ -16,7 +16,9 @@ const Header = () => {
                 className="flower-img"
               />
             </div>
-            <div className="heading-text">ManAn</div>
+            <div className="heading-text">
+              Made with love by Anushka & Manas
+            </div>
             <div>
               <img
                 src={FlowersCornerRight}
@@ -31,4 +33,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Footer;

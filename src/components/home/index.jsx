@@ -36,7 +36,7 @@ const Home = () => {
                   >
                     <div className="carousel-text-container">
                       <p className="quote-title">{item.quote}</p>
-                      <p className="quote-description">{item.description}</p>
+                      {/* <p className="quote-description">{item.description}</p> */}
                     </div>
                   </Grid>
                 </Grid>
@@ -53,25 +53,27 @@ export default Home;
 
 const CarouselDisplay = [
   {
-    quote: `"Sorry, I can’t hear you over the volume of my hair."`,
+    quote: "Sorry, I can’t hear you over the volume of my hair.",
     image: Eng3,
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
   },
   {
-    quote: "Quote 2",
+    quote:
+      "Ah, what happiness it is to be with people who are all happy, to press hands, press cheeks, smile into eyes.",
     image: Eng1,
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
   },
   {
-    quote: "Quote 3",
+    quote:
+      "You hold her hand and she holds yours, and that's a very good sign that she's your tootsy wootsy in the good old summer time.",
     image: Eng4,
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
   },
   {
-    quote: `"Even on bad days, I’ll still be happy with you."`,
+    quote: "Even on bad days, I’ll still be happy with you.",
     image: Eng2,
     description:
       "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
