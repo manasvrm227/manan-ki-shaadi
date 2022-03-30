@@ -12,8 +12,14 @@ const Lab = () => {
         </p>
         <div className="form-container">
           <div>
-            <form className="lab-form" method="post">
-              <input type="hidden" name="form-name" value="lab-form" />
+            <form
+              className="lab-form"
+              name="lab"
+              method="post"
+              data-netlify="true"
+              onSubmit="submit"
+            >
+              <input type="hidden" name="form-name" value="lab" />
               <label>Your name: &nbsp;</label>
               <input
                 type="text"
