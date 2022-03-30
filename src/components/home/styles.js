@@ -28,7 +28,6 @@ export const Wrapper = styled(Grid)`
   }
   .quote-title {
     font-size: 2em;
-    font-weight: bold;
     /* color: ; */
     @media (max-width: 425px) {
       font-size: 1em;
