@@ -1,9 +1,11 @@
 import { Grid } from "@mui/material";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { SectionHeader } from "./commonStyles";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from "./components/home";
+import LoadingScreen from "./components/loading-screen";
 import Deck from "./components/our-story";
 // import OurStory from "./components/our-story";
 
@@ -29,21 +31,32 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 5000);
+  }, []);
   return (
     <>
-      <Wrapper>
-        <Header />
-        <Home />
-        <Grid container>
-          <Grid item xs={12} className="header-container">
-            <p className="heading">Our Journey</p>
+      {loaded === true ? (
+        <Wrapper>
+          <Header />
+          <Home />
+          <Grid container>
+            <Grid item xs={12} className="header-container">
+              <p className="heading">Our Journey</p>
+            </Grid>
           </Grid>
-        </Grid>
-        <div className="deck-container">
-          <Deck />
-        </div>
-        <Footer />
-      </Wrapper>
+          <div className="deck-container">
+            <Deck />
+          </div>
+          <Footer />
+        </Wrapper>
+      ) : (
+        <LoadingScreen />
+      )}
     </>
   );
 }
