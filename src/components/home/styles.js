@@ -29,7 +29,10 @@ export const Wrapper = styled(Grid)`
   .quote-title {
     font-size: 2em;
     font-weight: bold;
-    color: #ac3b61;
+    /* color: ; */
+    @media (max-width: 425px) {
+      font-size: 1em;
+    }
   }
   .quote-description {
     color: #123c69;

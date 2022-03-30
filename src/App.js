@@ -5,6 +5,7 @@ import { SectionHeader } from "./commonStyles";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Home from "./components/home";
+import Lab from "./components/lab";
 import LoadingScreen from "./components/loading-screen";
 import Deck from "./components/our-story";
 // import OurStory from "./components/our-story";
@@ -23,6 +24,9 @@ const Wrapper = styled.div`
     cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
         39 39,
       auto;
+  }
+  .lab-container {
+    margin-top: 100vh;
   }
   .header-container {
     text-align: center;
@@ -55,7 +59,17 @@ function App() {
           <div className="deck-container">
             <Deck />
           </div>
-          {/* <Footer /> */}
+          <div className="lab-container">
+            <Grid container>
+              <Grid item xs={12} className="header-container">
+                <p className="heading">Leave a blessing</p>
+              </Grid>
+            </Grid>
+            <Lab />
+          </div>
+          <div className="footer-container">
+            <Footer />
+          </div>
         </Wrapper>
       ) : (
         <LoadingScreen />
