@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   .deck-container {
     width: 100%;
     position: absolute;
-    /* overflow: hidden; */
+    overflow: hidden;
     /* background-color: beige; */
     height: 100%;
     padding-top: 8%;
