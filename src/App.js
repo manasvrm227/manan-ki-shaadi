@@ -15,6 +15,8 @@ const Wrapper = styled.div`
   height: 100vh;
   .deck-container {
     width: 100%;
+    position: absolute;
+    /* overflow: hidden; */
     /* background-color: beige; */
     height: 100%;
     padding-top: 8%;
@@ -53,7 +55,7 @@ function App() {
           <div className="deck-container">
             <Deck />
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </Wrapper>
       ) : (
         <LoadingScreen />

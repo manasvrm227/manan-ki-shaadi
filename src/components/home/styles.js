@@ -23,7 +23,7 @@ export const Wrapper = styled(Grid)`
   .carousel-text-container {
     width: 60%;
     @media (max-width: 425px) {
-      width: 100%;
+      width: 90%;
     }
   }
   .quote-title {
