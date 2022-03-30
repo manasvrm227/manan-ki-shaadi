@@ -1,6 +1,4 @@
 import { Grid } from "@mui/material";
-import FlowersCornerLeft from "../../assets/images/flower-left-min.png";
-import FlowersCornerRight from "../../assets/images/flower-min.png";
 import { Wrapper } from "./styles";
 
 const Header = () => {
@@ -11,7 +9,7 @@ const Header = () => {
           <div className="img-container">
             <div>
               <img
-                src={FlowersCornerLeft}
+                src="https://res.cloudinary.com/dkksvxoms/image/upload/v1648616519/manan-shaadi/flower-left-min_efkpsn.png"
                 alt="corner-flowers"
                 className="flower-img"
               />
@@ -19,7 +17,7 @@ const Header = () => {
             <div className="heading-text">ManAn</div>
             <div>
               <img
-                src={FlowersCornerRight}
+                src="https://res.cloudinary.com/dkksvxoms/image/upload/v1648616519/manan-shaadi/flower-min_jg20vk.png"
                 alt="corner-flowers"
                 className="flower-img"
               />

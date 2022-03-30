@@ -1,38 +1,38 @@
 import React, { useState } from "react";
 import { useSprings, animated, interpolate } from "react-spring";
 import { useGesture } from "react-use-gesture";
-import One from "../../assets/images/1.jpg";
-import Two from "../../assets/images/2.jpg";
-import Three from "../../assets/images/3.jpg";
-import Four from "../../assets/images/4.jpg";
-import Five from "../../assets/images/5.jpg";
-import Six from "../../assets/images/6.jpg";
-import Seven from "../../assets/images/7.jpg";
-import Eight from "../../assets/images/8.jpg";
-import Nine from "../../assets/images/9.jpg";
-import Ten from "../../assets/images/10.jpg";
-import Eleven from "../../assets/images/11.jpg";
-import Twelve from "../../assets/images/12.jpg";
-import Thirteen from "../../assets/images/13.jpg";
-import Fourteen from "../../assets/images/14.jpg";
-import Fifteen from "../../assets/images/15.jpg";
+// import One from "../../assets/images/1.jpg";
+// import Two from "../../assets/images/2.jpg";
+// import Three from "../../assets/images/3.jpg";
+// import Four from "../../assets/images/4.jpg";
+// import Five from "../../assets/images/5.jpg";
+// import Six from "../../assets/images/6.jpg";
+// import Seven from "../../assets/images/7.jpg";
+// import Eight from "../../assets/images/8.jpg";
+// import Nine from "../../assets/images/9.jpg";
+// import Ten from "../../assets/images/10.jpg";
+// import Eleven from "../../assets/images/11.jpg";
+// import Twelve from "../../assets/images/12.jpg";
+// import Thirteen from "../../assets/images/13.jpg";
+// import Fourteen from "../../assets/images/14.jpg";
+// import Fifteen from "../../assets/images/15.jpg";
 
 const cards = [
-  Fifteen,
-  Fourteen,
-  Thirteen,
-  Twelve,
-  Eleven,
-  Ten,
-  Nine,
-  Eight,
-  Seven,
-  Six,
-  Five,
-  Four,
-  Three,
-  Two,
-  One,
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616517/manan-shaadi/15_fd0k8r.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616516/manan-shaadi/14_jdmgxk.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616517/manan-shaadi/13_t8ld7r.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616518/manan-shaadi/12_qbqtil.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616516/manan-shaadi/11_u3tkdd.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616516/manan-shaadi/10_fp1lcl.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616516/manan-shaadi/9_ssrbi7.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616517/manan-shaadi/8_wupy6a.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616515/manan-shaadi/7_ljjycg.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616515/manan-shaadi/6_pmxaln.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616514/manan-shaadi/5_ezuveg.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616514/manan-shaadi/4_cgzlqd.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616515/manan-shaadi/3_be0say.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616515/manan-shaadi/2_qeszfu.jpg",
+  "https://res.cloudinary.com/dkksvxoms/image/upload/v1648616514/manan-shaadi/1_gpok19.jpg",
 ];
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
