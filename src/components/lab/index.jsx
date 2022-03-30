@@ -12,12 +12,14 @@ const Lab = () => {
         </p>
         <div className="form-container">
           <div>
-            <form className="lab-form" action="POST" data-netlify="true">
+            <form className="lab-form" method="post">
+              <input type="hidden" name="form-name" value="lab-form" />
               <label>Your name: &nbsp;</label>
               <input
                 type="text"
                 placeholder="Enter your name"
                 name="username"
+                required
               ></input>
               <br />
               <br />
@@ -26,10 +28,8 @@ const Lab = () => {
                 placeholder="Enter your message"
                 rows="10"
                 name="message"
+                required
               ></textarea>
-              <br />
-              <br />
-              <div data-netlify-recaptcha="true"></div>
               <br />
               <br />
               <button type="submit">Send</button>
