@@ -4,10 +4,12 @@ import { Grid } from "@mui/material";
 export const Wrapper = styled(Grid)`
   font-family: "Kalam", cursive;
   font-weight: bold;
+  /* background-color: beige; */
   /* .carousel-wrapper {
     height: 95vh;
   } */
   .carousel-container {
+    /* background-color: beige; */
     display: flex;
     @media (max-width: 425px) {
       flex-direction: column;

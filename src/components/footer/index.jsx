@@ -17,7 +17,7 @@ const Footer = () => {
               />
             </div>
             <div className="heading-text">
-              Made with love by Anushka & Manas
+              Made with &#9829; by Anushka & Manas
             </div>
             <div>
               <img

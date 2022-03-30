@@ -10,17 +10,18 @@ import Deck from "./components/our-story";
 // import OurStory from "./components/our-story";
 
 const Wrapper = styled.div`
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+  height: 100vh;
   .deck-container {
     width: 100%;
+    /* background-color: beige; */
     height: 100%;
     padding-top: 8%;
     cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
         39 39,
       auto;
   }
-  font-family: "Kalam", cursive;
-  font-weight: bold;
-  height: 100vh;
   .header-container {
     text-align: center;
   }

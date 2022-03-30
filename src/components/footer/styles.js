@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin-top: 8%;
+  /* background-color: beige; */
+  padding-top: 8%;
   .header-container {
     height: 20vh;
   }
