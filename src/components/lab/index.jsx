@@ -25,6 +25,7 @@ const Lab = () => {
                 type="text"
                 placeholder="Enter your name"
                 name="username"
+                disabled="true"
                 required
               ></input>
               <br />
@@ -33,12 +34,18 @@ const Lab = () => {
               <textarea
                 placeholder="Enter your message"
                 rows="10"
+                disabled="true"
                 name="message"
                 required
               ></textarea>
               <br />
               <br />
-              <button type="submit">Send</button>
+              <button type="submit" disabled="true">
+                Send
+              </button>
+              <br />
+              *disabled now as we received a lot of love from you guys which
+              over-flooded our inboxes.
             </form>
           </div>
         </div>
