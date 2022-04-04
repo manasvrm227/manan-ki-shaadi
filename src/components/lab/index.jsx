@@ -12,7 +12,7 @@ const Lab = () => {
         </p>
         <div className="form-container">
           <div>
-            <form
+            {/* <form
               className="lab-form"
               name="lab"
               // method="post"
@@ -47,9 +47,9 @@ const Lab = () => {
                 Send
               </button>
               <br />
-              *disabled now as we received a lot of love from you guys which
-              over-flooded our inboxes.
-            </form>
+            </form> */}
+            *disabled now as we received a lot of love from you guys which
+            over-flooded our inboxes.*
           </div>
         </div>
       </div>
