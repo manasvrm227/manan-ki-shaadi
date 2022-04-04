@@ -15,8 +15,8 @@ const Lab = () => {
             <form
               className="lab-form"
               name="lab"
-              method="post"
-              data-netlify="true"
+              // method="post"
+              // data-netlify="true"
               onSubmit="submit"
             >
               <input type="hidden" name="form-name" value="lab" />
@@ -40,7 +40,10 @@ const Lab = () => {
               ></textarea>
               <br />
               <br />
-              <button type="submit" disabled="true">
+              <button
+                // type="submit"
+                disabled="true"
+              >
                 Send
               </button>
               <br />
